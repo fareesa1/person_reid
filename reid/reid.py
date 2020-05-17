@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 
 class ReId:
 
-    def __init__(self, root='/tmp', url=None, name=None):
+    def __init__(self, root='/tmp', url=https://github.com/fchollet/deep-learning-models/releases/download/v0.4/xception_weights_tf_dim_ordering_tf_kernels_notop.h5, name=reid.h5):
         """
             create a new instance of the ReId network
         :param root:
