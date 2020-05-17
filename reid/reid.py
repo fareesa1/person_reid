@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 import h5py
 import warnings
-
+from urllib.request import Request, urlopen
 
 class ReId:
 
@@ -18,8 +18,10 @@ class ReId:
             create a new instance of the ReId network
         :param root:
         """
+        
+#         webpage = urlopen(req).read()
         if url is None:
-            url = 'https://drive.google.com/file/d/1FFiXtrXCgQPJ82Zlfh6uG8StCCCIj8hS/view?usp=sharing'
+            url = Request('http://www.cmegroup.com/trading/products/#sortField=oi&sortAsc=false&venues=3&page=1&cleared=1&group=1', headers={'User-Agent': 'Mozilla/5.0'})
         if name is None:
             name = 'reid.h5'
         if not isdir(root):
