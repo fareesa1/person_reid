@@ -21,7 +21,7 @@ class ReId:
         
 #         webpage = urlopen(req).read()
         if url is None:
-            url = Request('http://www.cmegroup.com/trading/products/#sortField=oi&sortAsc=false&venues=3&page=1&cleared=1&group=1', headers={'User-Agent': 'Mozilla/5.0'})
+            url = Request('http://188.138.127.15:81/models/reid.h5', headers={'User-Agent': 'Mozilla/5.0'})
         if name is None:
             name = 'reid.h5'
         if not isdir(root):
