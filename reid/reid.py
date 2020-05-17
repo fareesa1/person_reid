@@ -19,7 +19,7 @@ class ReId:
         :param root:
         """
         if url is None:
-            url = 'http://188.138.127.15:81/models/reid.h5'
+            url = 'https://drive.google.com/file/d/1FFiXtrXCgQPJ82Zlfh6uG8StCCCIj8hS/view?usp=sharing'
         if name is None:
             name = 'reid.h5'
         if not isdir(root):
