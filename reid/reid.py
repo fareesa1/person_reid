@@ -21,7 +21,7 @@ class ReId:
         
 #         webpage = urlopen(req).read()
         if url is None:
-            url = '/content/xception_weights_tf_dim_ordering_tf_kernels_notop.h5'
+            url = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.4/xception_weights_tf_dim_ordering_tf_kernels_notop.h5'
         if name is None:
             name = 'reid.h5'
         if not isdir(root):
