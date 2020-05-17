@@ -21,8 +21,7 @@ class ReId:
         
 #         webpage = urlopen(req).read()
         if url is None:
-            req = Request('https://github-production-release-asset-2e65be.s3.amazonaws.com/64878964/0902d694-9601-11e6-9d09-495ad5cf3a8b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200517T160933Z&X-Amz-Expires=300&X-Amz-Signature=eb2d44dc0cf2cdacb8696ff256982ff00331faf81d20792f7d494bb7b6390541&X-Amz-SignedHeaders=host&actor_id=30589399&repo_id=64878964&response-content-disposition=attachment%3B%20filename%3Dxception_weights_tf_dim_ordering_tf_kernels_notop.h5&response-content-type=application%2Foctet-stream', headers={'User-Agent': 'Mozilla/5.0'})
-            url = urlopen(req).read()
+            url = '/content/xception_weights_tf_dim_ordering_tf_kernels_notop.h5'
         if name is None:
             name = 'reid.h5'
         if not isdir(root):
